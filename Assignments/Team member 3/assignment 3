@@ -1,0 +1,86 @@
+Question 1:
+num=int(input("Enter The Number:"))
+power=int(input("Enter the power:"))
+ans=num**power
+print(ans)
+Enter The Number:7
+Enter the power:4
+2401
+
+Question 2:
+def Convert(string):
+	li = list(string.split(" "))
+	return li
+str1 = input("")
+print(Convert(str1))
+Hi there Sam!
+['Hi', 'there', 'Sam!']
+
+Question 3:
+planet = "Earth" 
+diameter = 12742  
+print("The diameter of {} is {} kilometers.".format(planet,diameter))  
+The diameter of Earth is 12742 kilometers.
+
+Question 4:
+lst = [1,2,[3,4],[5,[100,200,['hello']],23,11],1,7]
+print(lst[3][1][2][0])
+hello
+
+Question 5:
+d = {'k1':[1,2,3,{'tricky':['oh','man','inception',{'target':[1,2,3,'hello']}]}]}
+d['k1'][3]['tricky'][3]['target'][3]
+hello
+
+Question 6:
+Tuple is immutable
+
+Question 7:
+def domainGet(strDomain): 
+   return strDomain.split('@')[1]
+out = domainGet('user@domain.com')
+print(out)
+domain.com
+
+Question 8:
+def findDog(st):
+    print(st.lower())
+    return 'dog' in st.split() 
+findDog('Is there a dog here?')
+is there a dog here?
+True
+
+Question 9:
+seq = ['soup','dog','salad','cat','great']
+list(filter(lambda item:item[0]=='s',seq))
+['soup', 'salad']
+
+Problem 1:
+def caught_speeding(speed, is_birthday):
+    speed_org = speed
+    if is_birthday == True:
+        speed = speed-5
+    else:
+        speed = speed_org        
+    if speed <= 60:
+        print("No Ticket")
+    elif speed>60 and speed<81:
+        print ("Small Ticket")
+    elif speed>=81:
+        print ("Big Ticket")
+    print(speed)
+pass
+caught_speeding(81,False)
+Big Ticket
+81
+
+problem 2:
+dict_1 = {'empid': 15, 'empname': "Arvind", 'BasicPay' : 40000 }
+dict_2 = {'dname': "softwareengineer",'did': 20}
+dict_1.update(dict_2)
+print('Updated dictionary:')
+print(dict_1)
+Updated dictionary:
+{'empid': 15, 'empname': 'Arvind', 'BasicPay': 40000, 'dname': 'softwareengineer', 'did': 20}
+
+    
